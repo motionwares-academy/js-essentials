@@ -24,7 +24,7 @@ let newArray = ["item1", "item2", "item3", "item4", "item5"];
 
 // how to always get the last item of an array
 let lengthOfArray = newArray.length;
-console.log(newArray[lengthOfArray - 1]);
+// console.log(newArray[lengthOfArray - 1]);
 
 // =============================================================================
 

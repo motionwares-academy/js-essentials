@@ -14,12 +14,36 @@
       crossorigin="anonymous"
     />
 
-    <!-- include javascript -->
-    <script src="index.js"></script>
+    <!--  -->
+    <!-- <style>
+      .paragraphToSelect {
+        color: red;
+      }
+    </style> -->
   </head>
   <body>
-    <button class="btn btn-primary" onclick="showAlert()">
-      Hello from the other side
-    </button>
+    <div class="container">
+      <div class="row vh-100">
+        <div class="col-md-7 m-auto text-center">
+          <!-- heading -->
+          <h1>This is an H1</h1>
+
+          <!-- paragraph -->
+          <p class="lead paragraphToSelect">This is a paragraph</p>
+
+          <!-- button -->
+          <button
+            class="btn btn-primary"
+            onclick="dynamicallyChangeParagraphText('This is something from something')"
+          >
+            Change Paragraph Text
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- include javascript -->
+    <script src="index.js"></script>
+    <script src="domManipulations.js"></script>
   </body>
 </html>
