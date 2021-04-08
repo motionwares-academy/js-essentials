@@ -26,17 +26,22 @@
       <div class="row vh-100">
         <div class="col-md-7 m-auto text-center">
           <!-- heading -->
-          <h1>This is an H1</h1>
+          <h1 id="header">This is an H1</h1>
 
           <!-- paragraph -->
           <p class="lead paragraphToSelect">This is a paragraph</p>
 
-          <!-- button -->
+          <!-- button to change text -->
           <button
             class="btn btn-primary"
-            onclick="dynamicallyChangeParagraphText('This is something from something')"
+            onclick="dynamicallyChangeParagraphText('This is new paragraph value', 'This is new header value')"
           >
-            Change Paragraph Text
+            Change Text
+          </button>
+
+          <!-- button to change color -->
+          <button class="btn btn-primary" onclick="changeColor()">
+            Change Paragraph Color
           </button>
         </div>
       </div>
@@ -45,5 +50,6 @@
     <!-- include javascript -->
     <script src="index.js"></script>
     <script src="domManipulations.js"></script>
+    <script src="modern.js"></script>
   </body>
 </html>
